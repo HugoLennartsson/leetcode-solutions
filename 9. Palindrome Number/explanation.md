@@ -5,7 +5,7 @@
 
 In this problem we are tasked to construct a function that checks if an integer `x` is palindrome. A palindrome number is a number that reads the same `forwards` and `backwards`. It is also requested that we solve the problem without converting `x` to a string. 
 
-We start by dealing with the edge cases. A number cannot be palindrome if it is negative or if it ends with 0. 
+We start by dealing with the edge cases. A number cannot be palindrome if it is negative or if it ends with `0`. 
 
 ```Python
 if x < 0 or (x % 10 == 0 and x!=0):
@@ -33,7 +33,7 @@ Each iteration of the loop we add the last digit in `x` as the last digit in `re
     x //= 10
 ```
 
-Once we exit the loop there are two possible scenarios. If `x` was even we will have two integers of equal length. In this case we can simply compare the two. If it was odd, `reversed_half` will be one digit larger. However, the extra digit at the end of `reversed_half` will be the middle point of the original integer. This means that it is not needed in order to determine if the integer is palindrome. In this case we just perform integer division by 10 on `reversed_half` and then compare it with `x`.
+Once we exit the loop there are two possible scenarios. If `x` was even we will have two integers of equal length. In this case we can simply compare the two. If it was odd, `reversed_half` will be one digit larger. However, the extra digit at the end of `reversed_half` will be the middle point of the original integer. This means that it is not needed in order to determine if the integer is palindrome. In this case we just perform integer division by `10` on `reversed_half` and then compare it with `x`.
 
 ```Python
 return x == reversed_half or x == reversed_half // 10

@@ -29,4 +29,4 @@ This returns statement returns the maximum amount of instances we can produce by
 
 **Time complexity**
 
-Creating the dictionary and using the min function takes constant time in our problem. This is because they are unaffected by the input string. The for loop has the time complexity of O(n), where n is the length of the input string `text`, since we iterate through each character of string one time. Therefore the time complexity of the solution is O(n). 
+Creating the dictionary and using the min function takes constant time in our problem. This is because they are unaffected by the input string. The for loop has the time complexity of `O(n)`, where n is the length of the input string `text`, since we iterate through each character of string one time. Therefore the time complexity of the solution is `O(n)`. 

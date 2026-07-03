@@ -3,14 +3,14 @@
 
 **111. Minimum Depth of Binary Tree**
 
-In this problem we are tasked to find the minimum depth of a binary tree. The minimal depth of a binary tree will be the depth of the highest leaf node. We can therefore use breadth first search (BFS) to traverse the tree. This is a good idea, since the first leaf node encountered is guaranteed to have the minimum depth of the tree. 
+In this problem we are tasked to find the minimum depth of a binary tree. The minimal depth of a binary tree will be the depth of the highest leaf node. We can therefore use **breadth first search (BFS)** to traverse the tree. This is a good idea, since the first leaf node encountered is guaranteed to have the minimum depth of the tree. 
 
-Firstly we make sure that the root node is not None. 
+Firstly we make sure that the root node is not `None`. 
 ```python
 if not root:
     return 0 
 ```
-If there is no root node in a binary tree we return 0.
+If there is no root node in a binary tree we return `0`.
 
 Then we create a double-ended queue. Inside it we store a tuple of the root TreeNode and the depth of the root. 
 ```python
@@ -37,8 +37,8 @@ If the node does not have any children, it is a leaf node. We return the depth o
     if node.right:
         q.append((node.right, depth + 1))
 ```
-Incase the node was not a leaf, we add any any potential left/right children to the deque. 
+In case the node was not a leaf, we add any any potential left/right children to the deque. 
 
 **Time Complexity** 
 
-Each node we process during the search process takes constant time to process. In the worst case scenario we will have to check all of the nodes. This gives us a time complexity of 0(n) where n is the amount of nodes in the tree. 
+Each node we process during the search process takes constant time to process. In the worst case scenario we will have to check all of the nodes. This gives us a time complexity of `0(n)` where `n` is the amount of nodes in the tree. 

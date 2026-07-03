@@ -15,14 +15,14 @@ max_cost = max(costs)
 freq = [0] * (max_cost + 1)
 ```
 
-We then construct the frequency array by adding 1 to each of the values corresponding index.
+We then construct the frequency array by adding `1` to each of the values corresponding index.
 
 ```python
 for cost in costs:
     freq[cost] += 1
 ```
 
-Now that we have our frequency array fully constructed it is time to calculate how many ice cream bars the boy can buy. We will keep track of successfully bought ice cream bars using the variable `ans`. We iterate through the frequency array from the cheapest ice creams to the more expensive ones. If the frequency of a cost is zero we move on to the next cost, there is no ice cream to buy at that price. 
+Now that we have our frequency array fully constructed it is time to calculate how many ice cream bars the boy can buy. We will keep track of successfully bought ice cream bars using the variable `ans`. We iterate through the frequency array from the cheapest ice creams to the more expensive ones. If the frequency of a cost is `0` we move on to the next cost, there is no ice cream to buy at that price. 
 
 ```python
 ans = 0
@@ -32,7 +32,7 @@ for cost in range(1, max_cost + 1):
         continue
 ```
 
-We then check the minimum value of the following, `how many ice cream bars of a certain price is available` and `how many ice cream bars of that price could we afford to buy`. For example if there are 4 ice cream bars that cost of one coin each and we have 10 coins, `can_buy` will be 4 because there are 4 ice cream bars available and we can afford 10. 
+We then check the minimum value of the following, `how many ice cream bars of a certain price is available` and `how many ice cream bars of that price could we afford to buy`. For example if there are `4` ice cream bars that cost of `1` coin each and we have `10` coins, `can_buy` will be `4` because there are `4` ice cream bars available and we can afford `10`. 
 
 ```Python
     can_buy = min(freq[cost], coins // cost) 
@@ -52,7 +52,7 @@ return ans
 
 **Time Complexity** 
 
-To build the frequency array we need to iterate through the entire `costs` array to find the `max_cost` and to add the values into the empty `freq` array. The final for loop and the construction of the empty `freq` array takes `max_cost` iterations on average. The time complexity will therefore be `O(n)` + `O(n)` + `O(max_cost)` + `O(max_cost)` = `O(n + max_cost)`. Sorting the array using .sort() for example would give us a time complexity of O(n log n). This is worse for this problem, because we know that `max_cost` is relatively small. 
+To build the frequency array we need to iterate through the entire `costs` array to find the `max_cost` and to add the values into the empty `freq` array. The final for loop and the construction of the empty `freq` array takes `max_cost` iterations on average. The time complexity will therefore be `O(n)` + `O(n)` + `O(max_cost)` + `O(max_cost)` = `O(n + max_cost)`. Sorting the array using `.sort()` for example would give us a time complexity of `O(n log n)`. This is worse for this problem, because we know that `max_cost` is relatively small. 
 
 
 
