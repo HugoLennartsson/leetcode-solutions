@@ -42,3 +42,8 @@ In case the node was not a leaf, we add any any potential left/right children to
 **Time Complexity** 
 
 Each node we process during the search process takes constant time to process. In the worst case scenario we will have to check all of the nodes. This gives us a time complexity of <code><i>0(n)</i></code> where `n` is the amount of nodes in the tree. 
+
+**Space Complexity**
+
+Using this approach for the solution is determined by the maximum number of nodes stored in the deque at any given point. In the worst case scenario the tree will be perfectly balanced. For a balanced tree the bottom level contains about half of the total nodes in the entire tree, `n/2` nodes. The maximum size of our queue scales linearly with the number of nodes. This results in our auxiliary space complexity of <code><i>O(n)</i></code> where `n` is the total number of nodes. 
+

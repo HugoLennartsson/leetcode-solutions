@@ -31,3 +31,7 @@ return largest_altitude
 
 **Time Complexity** 
 We iterate through the list once. The list is `n` items long. Therefore the time complexity is <code><i>O(n)</i></code>.
+
+**Space Complexity** 
+
+Using this approach we only create two integer variables, `largest_altitude` and `current_altitude` to track our elevations as we simulate the road trip. We are not allocating any extra arrays, sets or hash maps to store anything. The memory footprint remains constant throughout runtime. This gives us a space complexity of O(1).

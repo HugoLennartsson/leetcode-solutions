@@ -40,3 +40,7 @@ return dummy.next
 **Time Complexity**
 
 The maximum amount of iterations of our while loop happens when the second to last element is in one of the lists and the last element is in the other. This forces us to iterate through the entire length of both linked lists. We get a time complexity of <code><i>O(n + m)</i></code> where `n = len(list1)` and `m = len(list2)`.
+
+**Space Complexity**
+
+In this approach we are creating a single `dummy` node and a `tail` pointer to stitch the nodes together. We are not copying new nodes or copying the data, we are rearranging pointers. Because the memory for the pointers are already allocated it remains constant no matter of how long the input lists are. This tells us that the auxiliary space complexity for the solution is <code><i>O(1)</i></code>.

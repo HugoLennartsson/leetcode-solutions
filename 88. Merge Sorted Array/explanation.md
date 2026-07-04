@@ -35,6 +35,13 @@ The while loop above can exit in two ways. Scenario 1 is that `p1` reaches `0` b
 
 At this point we can be sure that the first `m + n` elements of the array is sorted. 
 
-**Time complexity**
+**Time Complexity**
 
 Our while loops are guaranteed to run exactly `m + n` times. Therefore it can be concluded that the time complexity of the solution is <code><i>O(m + n)</i></code>.
+
+**Space Complexity**
+
+Since the problem explicitly mandates that the operations must be performed in place, we know that the space complexity has to be <code><i>O(1)</i></code> to achieve a valid solution.
+
+
+

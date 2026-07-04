@@ -45,3 +45,7 @@ Then when we have iterated through each balanced subarray we return the differen
 **Time Complexity**
 
 The `.sort()` function has a time complexity of <code><i>O(n &middot; log(n))</i></code>. The sliding window will have the time complexity <code><i>O(n)</i></code>, since the total work across all iterations of the while loop is bounded by `n`. The final complexity will therefore be <code><i>O(n &middot; log(n))</i></code> + <code><i>O(n)</i></code> = <code><i>O(n &middot; log(n))</i></code>. 
+
+**Space Complexity** 
+
+The space complexity of this solution is primarily determined by the sorting step at the beginning of the algorithm. <b><a href="https://en.wikipedia.org/wiki/Timsort">Timsort</a></b> is used by the method `.sort()`. This gives us a space complexity of <code><i>O(n)</i></code> where `n = len(nums)`.

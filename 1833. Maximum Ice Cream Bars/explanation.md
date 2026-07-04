@@ -54,5 +54,9 @@ return ans
 
 To build the frequency array we need to iterate through the entire `costs` array to find the `max_cost` and to add the values into the empty `freq` array. The final for loop and the construction of the empty `freq` array takes `max_cost` iterations on average. The time complexity will therefore be <code><i>O(n)</i></code> + <code><i>O(n)</i></code> + <code><i>O(max_cost)</i></code> + <code><i>O(max_cost)</i></code> = <code><i>O(n + max_cost)</i></code>. Sorting the array using `.sort()` for example would give us a time complexity of <code><i>O(n log n)</i></code>. This is worse for this problem, because we know that `max_cost` is relatively small. 
 
+**Space Complexity**
+
+The space complexity of this problem is determined by the size of the frequency array. The array scales with the size of the largest integer in the input array. The auxiliary space complexity will therefore be <code><i>O(max_cost)</i></code> where `max_cost` is the maximum value present in the `costs` array.
+
 
 

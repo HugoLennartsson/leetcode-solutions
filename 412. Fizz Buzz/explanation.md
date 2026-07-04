@@ -60,3 +60,7 @@ Once we have handled every num between `0` and `n` we return `answer`.
 **Time Complexity**
 
 We pass through the each integer from `0` to `n` in the for loop. Therefore the time complexity will be <code><i>O(n)</i></code>. 
+
+**Space Complexity** 
+
+In this problem, we are creating a list to store the resulting strings for each number `1` to `n`. This means that the array will contain exactly n elements by the end of execution. This means that it requires <code><i>O(n)</i></code> space.

@@ -42,3 +42,7 @@ return x == reversed_half or x == reversed_half // 10
 **Time Complexity**
 
 In this problem we iterate through half of the integer. The amount of digits in `x` can be expressed as `log₁₀ x`. The time complexity of the solution will therefore be <code><i>O(log₁₀ x)</i></code>.
+
+**Space Complexity** 
+
+Using this approach we only rely on a single extra variable `reverse_half` to store the second half of the number. We do not rely on any auxiliary data structures that scale with the input size. This means that the amount of memory used remains constant regardless of our input size. Therefore our space complexity will be <code><i>O(1)</i></code>.

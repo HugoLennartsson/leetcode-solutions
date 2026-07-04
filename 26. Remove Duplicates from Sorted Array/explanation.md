@@ -31,4 +31,9 @@ return k + 1
 
 **Time Complexity**
 
-We pass through `nums` exactly `len(nums)` times. Inside our for loop we only do operations that has the average time complexity <code><i>O(1)</i></code>. Our solution will therefore have a time complexity of <code><i>O(n)</i></code>, where `n = len(nums)`.
+We pass through `nums` exactly `len(nums)` times. Inside our for loop we only do operations that has the average time complexity <code><i>O(1)</i></code>. Our solution will therefore have a time complexity of <code><i>O(n)</i></code>, where `n = len(nums)`. 
+
+**Space Complexity**
+
+Since the problem explicitly mandates that the operations must be performed in place, we know that the space complexity has to be <code><i>O(1)</i></code> to achieve a valid solution.
+

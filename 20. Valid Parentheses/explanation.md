@@ -49,3 +49,7 @@ return not stack
 **Time Complexity**
 
 We are iterating through the input string exactly once. All of the stack and dictionary operations we use take constant time. Therefore our solutions time complexity is <code><i>O(n)</i></code> where `n = len(s)`.
+
+**Space Complexity** 
+
+Using this approach, the space complexity will be determined by the maximum size that the stack can grow during the execution of the program. The worst case scenario would be an input string that consists entirely of opening brackets. In this case the stack will store all `n` characters from the input string. The dictionary `mapping` contains a fixed number of key-pair values, so it has constant space complexity. Based on this we can conclude that the solution has an overall auxiliary space complexity of <code><i>O(n)</i></code> where `n = len(s)`.

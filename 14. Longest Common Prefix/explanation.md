@@ -34,6 +34,10 @@ We then return the first `i` characters.
 return first[:i]
 ```
 
-**Time complexity**
+**Time Complexity**
 
-The `.sort()` method has an average time complexity of `O(n log(n))` where `n = len(strs)`. However, since we are sorting strings we have to make comparisons on a char level. The time complexity of our the sorting of our array will therefore be <code><i>O(m &middot; n log(n))</i></code> where m is the length of the longest string in `strs`. Our while loop has the time complexity <code><i>O(m)</i></code>. So our total time complexity will be <code><i>O(m &middot; n log(n))</i></code> + <code><i>O(m)</i></code> =  <code><i>O(m &middot; n log(n))</i></code>. It would be possible to reach a time complexity of <code><i>O(m &middot; n)</i></code> by using a different approach, for example a vertical scan. However the performance increase would not be drastic given the constraints in the problem description. 
+The `.sort()` method has an average time complexity of `O(n log(n))` where `n = len(strs)`. However, since we are sorting strings we have to make comparisons on a char level. The time complexity of our the sorting of our array will therefore be <code><i>O(m &middot; n log(n))</i></code> where `m` is the length of the longest string in `strs`. Our while loop has the time complexity <code><i>O(m)</i></code>. So our total time complexity will be <code><i>O(m &middot; n log(n))</i></code> + <code><i>O(m)</i></code> =  <code><i>O(m &middot; n log(n))</i></code>. It would be possible to reach a time complexity of <code><i>O(m &middot; n)</i></code> by using a different approach, for example a vertical scan. However the performance increase would not be drastic given the constraints in the problem description. 
+
+**Space Complexity**
+
+The space complexity used is dependant on the `.sort()` method. In python it uses <b><a href="https://en.wikipedia.org/wiki/Timsort">Timsort</a></b>. The sorting algorithm alters the array in place but requires an auxiliary space complexity of <code><i>O(n)</i></code>. We use two variables `first` and `last` that we use to then slice `first[:i]`. In the worst case scenario the sliced prefix will be as long as the shortest string in the array. This will give us a space complexity of <code><i>O(k)</i></code> where `k` is the length of the common prefix. Our combine the total auxiliary space complexity is <code><i>O(n + m)</i></code>. 

@@ -61,6 +61,11 @@ When we have processed the entire numeral we return `total`.
 return total
 ```
 
-**Time complexity**
+**Time Complexity**
 
 We process each character in the string once. Our arithmetic operations and our dictionary indexing take constant time. Therefore the solution has the time complexity of <code><i>O(n)</i></code> where `n = len(s)`.
+
+
+**Space Complexity** 
+
+In this solution, we use a dictionary that store the 7 standard Roman symbols. This dictionary does not scale with the input size. We also use two integer variables `total` and `prev_val`. Our space complexity will be <code><i>O(1)</i></code>. 

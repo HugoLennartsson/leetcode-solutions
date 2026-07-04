@@ -57,3 +57,6 @@ return k
 
 The time complexity of the for loop is <code><i>O(n)</i></code> since we only handle each index once. The average time complexity of direct indexing in a standard python list is <code><i>O(1)</i></code>. The time complexity of the solution is therefore <code><i>O(n)</i></code>.
 
+**Space Complexity**
+
+Since the problem explicitly mandates that the operations must be performed in place, we know that the space complexity has to be <code><i>O(1)</i></code> to achieve a valid solution.

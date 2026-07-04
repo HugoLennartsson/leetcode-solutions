@@ -27,6 +27,10 @@ return min(characters['b'], characters['a'], characters['l'] // 2, characters['o
 
 This returns statement returns the maximum amount of instances we can produce by holding each character accountable. 
 
-**Time complexity**
+**Time Complexity**
 
 Creating the dictionary and using the min function takes constant time in our problem. This is because they are unaffected by the input string. The for loop has the time complexity of <code><i>O(n)</i></code>, where `n` is the length of the input string `text`, since we iterate through each character of string one time. Therefore the time complexity of the solution is <code><i>O(n)</i></code>. 
+
+**Space Complexity** 
+
+In this approach, the space complexity is determined by the `characters` dictionary we use to store frequencies. We only track 5 unique characters. This means that the size of our dictionary is capped at a maximum of 5 key-value pair. This gives us a space complexity of <code><i>O(1)</i></code>.

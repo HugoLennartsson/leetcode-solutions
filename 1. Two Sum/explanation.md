@@ -29,4 +29,7 @@ If it is not, we add the value that needs to be added to our current value in or
 
 **Time Complexity**
 
-In this problem we are iterating through the input array a maximum of `1` time. All of our dictionary operations take on average constant time, <code><i>O(1)</i></code>. This means that the overall time complexity of the solution is <code><i>O(n)</i></code>.
+In this problem we are iterating through the input array a maximum of `1` time. All of our dictionary operations take on average constant time, <code><i>O(1)</i></code>. This means that the overall time complexity of the solution is <code><i>O(n)</i></code>. 
+
+**Space Complexity** 
+Since we utilize an auxiliary dictionary `num_dict` to store the complements of the numbers we have visited so far we can determine that in a worst case scenario we will have to store `n - 1`. So we get an average space complexity of <code><i>O(n)</i></code>. If we wanted to minimize our space complexity we could make a tradeoff and use brute force to solve the problem. This would give us a space complexity of <code><i>O(1)</i></code> but it would make our time complexity <code><i>O(n&sup2;)</i></code>.
