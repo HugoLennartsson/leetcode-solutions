@@ -52,7 +52,7 @@ return ans
 
 **Time Complexity** 
 
-To build the frequency array we need to iterate through the entire `costs` array to find the `max_cost` and to add the values into the empty `freq` array. The final for loop and the construction of the empty `freq` array takes `max_cost` iterations on average. The time complexity will therefore be `O(n)` + `O(n)` + `O(max_cost)` + `O(max_cost)` = `O(n + max_cost)`. Sorting the array using `.sort()` for example would give us a time complexity of `O(n log n)`. This is worse for this problem, because we know that `max_cost` is relatively small. 
+To build the frequency array we need to iterate through the entire `costs` array to find the `max_cost` and to add the values into the empty `freq` array. The final for loop and the construction of the empty `freq` array takes `max_cost` iterations on average. The time complexity will therefore be <code><i>O(n)</i></code> + <code><i>O(n)</i></code> + <code><i>O(max_cost)</i></code> + <code><i>O(max_cost)</i></code> = <code><i>O(n + max_cost)</i></code>. Sorting the array using `.sort()` for example would give us a time complexity of <code><i>O(n log n)</i></code>. This is worse for this problem, because we know that `max_cost` is relatively small. 
 
 
 

@@ -41,4 +41,4 @@ In case the node was not a leaf, we add any any potential left/right children to
 
 **Time Complexity** 
 
-Each node we process during the search process takes constant time to process. In the worst case scenario we will have to check all of the nodes. This gives us a time complexity of `0(n)` where `n` is the amount of nodes in the tree. 
+Each node we process during the search process takes constant time to process. In the worst case scenario we will have to check all of the nodes. This gives us a time complexity of <code><i>0(n)</i></code> where `n` is the amount of nodes in the tree. 

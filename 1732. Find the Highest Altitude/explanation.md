@@ -30,4 +30,4 @@ return largest_altitude
 ```
 
 **Time Complexity** 
-We iterate through the list once. The list is `n` items long. Therefore the time complexity is `O(n)`.
+We iterate through the list once. The list is `n` items long. Therefore the time complexity is <code><i>O(n)</i></code>.

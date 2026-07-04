@@ -55,5 +55,5 @@ return k
 
 **Time Complexity**
 
-The time complexity of the for loop is `O(n)` since we only handle each index once. The average time complexity of direct indexing in a standard python list is `O(1)`. The time complexity of the solution is therefore `O(n)`.
+The time complexity of the for loop is <code><i>O(n)</i></code> since we only handle each index once. The average time complexity of direct indexing in a standard python list is <code><i>O(1)</i></code>. The time complexity of the solution is therefore <code><i>O(n)</i></code>.
 

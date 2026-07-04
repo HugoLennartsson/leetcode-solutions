@@ -59,4 +59,4 @@ Once we have handled every num between `0` and `n` we return `answer`.
 
 **Time Complexity**
 
-We pass through the each integer from `0` to `n` in the for loop. Therefore the time complexity will be O(n). 
+We pass through the each integer from `0` to `n` in the for loop. Therefore the time complexity will be <code><i>O(n)</i></code>. 

@@ -37,4 +37,4 @@ At this point we can be sure that the first `m + n` elements of the array is sor
 
 **Time complexity**
 
-Our while loops are guaranteed to run exactly `m + n` times. Therefore it can be concluded that the time complexity of the solution is `O(m + n)`
+Our while loops are guaranteed to run exactly `m + n` times. Therefore it can be concluded that the time complexity of the solution is <code><i>O(m + n)</i></code>.

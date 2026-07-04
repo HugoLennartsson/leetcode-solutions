@@ -48,4 +48,4 @@ return not stack
 
 **Time Complexity**
 
-We are iterating through the input string exactly once. All of the stack and dictionary operations we use take constant time. Therefore our solutions time complexity is `O(n)` where `n = len(s)`.
+We are iterating through the input string exactly once. All of the stack and dictionary operations we use take constant time. Therefore our solutions time complexity is <code><i>O(n)</i></code> where `n = len(s)`.

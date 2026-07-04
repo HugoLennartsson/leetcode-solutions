@@ -29,4 +29,4 @@ If it is not, we add the value that needs to be added to our current value in or
 
 **Time Complexity**
 
-In this problem we are iterating through the input array a maximum of `1` time. All of our dictionary operations take on average constant time, `O(1)`. This means that the overall time complexity of the solution is `O(n)`.
+In this problem we are iterating through the input array a maximum of `1` time. All of our dictionary operations take on average constant time, <code><i>O(1)</i></code>. This means that the overall time complexity of the solution is <code><i>O(n)</i></code>.

@@ -63,4 +63,4 @@ return total
 
 **Time complexity**
 
-We process each character in the string once. Our arithmetic operations and our dictionary indexing take constant time. Therefore the solution has the time complexity of `O(n)` where `n = len(s)`.
+We process each character in the string once. Our arithmetic operations and our dictionary indexing take constant time. Therefore the solution has the time complexity of <code><i>O(n)</i></code> where `n = len(s)`.

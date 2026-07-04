@@ -39,4 +39,4 @@ return dummy.next
 
 **Time Complexity**
 
-The maximum amount of iterations of our while loop happens when the second to last element is in one of the lists and the last element is in the other. This forces us to iterate through the entire length of both linked lists. We get a time complexity of `O(n + m)` where `n = len(list1)` and `m = len(list2)`.
+The maximum amount of iterations of our while loop happens when the second to last element is in one of the lists and the last element is in the other. This forces us to iterate through the entire length of both linked lists. We get a time complexity of <code><i>O(n + m)</i></code> where `n = len(list1)` and `m = len(list2)`.

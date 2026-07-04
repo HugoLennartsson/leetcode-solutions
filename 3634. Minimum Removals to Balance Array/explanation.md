@@ -44,4 +44,4 @@ Then when we have iterated through each balanced subarray we return the differen
 
 **Time Complexity**
 
-The `.sort()` function has a time complexity of `O(nlog(n))`. The sliding window will have the time complexity `O(n)`, since the total work across all iterations of the while loop is bounded by `n`. The final complexity will therefore be `O(nlog(n))` + `O(n)` = `O(nlog(n))`
+The `.sort()` function has a time complexity of <code><i>O(n &middot; log(n))</i></code>. The sliding window will have the time complexity <code><i>O(n)</i></code>, since the total work across all iterations of the while loop is bounded by `n`. The final complexity will therefore be <code><i>O(n &middot; log(n))</i></code> + <code><i>O(n)</i></code> = <code><i>O(n &middot; log(n))</i></code>. 

@@ -41,4 +41,4 @@ return x == reversed_half or x == reversed_half // 10
 
 **Time Complexity**
 
-In this problem we iterate through half of the integer. The amount of digits in `x` can be expressed as `log₁₀ x`. The time complexity of the solution will therefore be `O(log₁₀ x)`.
+In this problem we iterate through half of the integer. The amount of digits in `x` can be expressed as `log₁₀ x`. The time complexity of the solution will therefore be <code><i>O(log₁₀ x)</i></code>.

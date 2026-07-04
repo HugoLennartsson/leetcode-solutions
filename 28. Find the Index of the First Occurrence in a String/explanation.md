@@ -5,7 +5,7 @@
 
 In this problem we are given two strings `needle` and `haystack`. We are tasked to return the index of the first occurrence of `needle` in `haystack`. If there is no occurrence we are to return `-1`.
 
-Our strategy is going to be checking each substring with the same length as our `needle` in our `haystack`, starting from the first character. 
+Our strategy is going to be checking each **substring** with the same length as our `needle` in our `haystack`, starting from the first character. 
 
 We start by declaring two variables `m` and `n` which represent the length of our `haystack` and `needle`.
 
