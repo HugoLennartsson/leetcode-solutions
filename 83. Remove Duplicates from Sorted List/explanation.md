@@ -7,7 +7,7 @@ In this problem we are given the `head` of a sorted linked list. We are tasked t
 
 To solve this we are going to traverse through the linked list and look ahead. Based on what we see we will make adjustments.
 
-First off, we check if that our head is not None.
+First off, we check if that our `head` is not None.
 
 ```Python
 if not head:
@@ -40,7 +40,7 @@ If they are not equal, we simply move on to processing the next node.
         current = current.next
 ```
 
-Then we simply return the head of the new linked list.
+Then we return the head of the new linked list.
 
 ```Python
 return head
