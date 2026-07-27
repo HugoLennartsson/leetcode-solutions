@@ -6,12 +6,13 @@ A curated collection of LeetCode problems solved using Python and SQL. This repo
 
 ## 📂 Repository Structure
 
-The repository follows a predictable layout. Each problem is contained within its own dedicated folder named after the problem ID and title (e.g., `1. Two Sum/`):
+The repository follows a predictable layout. Problems are categorized into numerical range buckets (e.g., `1-99`), with each individual problem contained within its own dedicated folder:
 
 ```text
 📁 leetcode-solutions/
-└── 📁 [Problem Number]-[Problem-Title]/
-    ├── 📄 problem_description.md  # The original LeetCode prompt and constraints
-    ├── 📄 explanation.md          # Approach, time/space complexity analysis, and reasoning
-    └── 📄 solution.py             # Implementation (or solution.sql for database tracks)
+└── 📁 [Problem Range]/ (e.g., 1-99)
+    └── 📁 [Problem Number]. [Problem Title]/ (e.g., 1. Two Sum)
+        ├── 📄 problem_description.md  # The original LeetCode prompt and constraints
+        ├── 📄 explanation.md          # Approach, time/space complexity analysis, and reasoning
+        └── 📄 solution.py             # Implementation (or solution.sql for database tracks)
 ```
