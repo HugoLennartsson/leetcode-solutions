@@ -51,7 +51,7 @@ Then we extend the palindrome centered at i outward as far as possible while com
         P[i] += 1
 ```
 
-After that we check if the rightmost index of the palindrome centered at i is larger than the rightmost boundary reached by any palindrome processed so far. If it is we update our new center to `i` as well as our new right most boundary to i + `P[i]`. 
+After that we check if the rightmost index of the palindrome centered at i is larger than the rightmost boundary reached by any palindrome processed so far. If it is we update our new center to `i` as well as our new right most boundary to `i + P[i]`. 
 
 ```Python 
     if i + P[i] > R:
@@ -65,7 +65,7 @@ Each element `P[i]` represents the radius of the longest palindrome centered at 
 max_len, center_index = max((val, idx) for idx, val in enumerate(P))
 ```
 
-Then we find the starting index of our palindrome, by subtracting our `center_index` by our `max_len`. However, this will only find the start index in `T`. To find the start index of the palindrome in the input array we need to divide by &2& as well. 
+Then we find the starting index of our palindrome, by subtracting our `center_index` by our `max_len`. However, this will only find the start index in `T`. To find the start index of the palindrome in the input array we need to divide by $2$ as well. 
 
 ```Python
 start = (center_index - max_len) // 2

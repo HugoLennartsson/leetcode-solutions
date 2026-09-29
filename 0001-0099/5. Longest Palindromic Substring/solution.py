@@ -8,7 +8,7 @@ class Solution:
         C = 0
         R = 0 
 
-        for i in range(1, n -1):
+        for i in range(1, n - 1):
             i_mirror = 2 * C - i
 
             if R > i:
