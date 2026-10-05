@@ -24,6 +24,7 @@ class Solution:
             digit = ord(s[i]) - ord('0')
             res = res * 10 + digit
             i += 1
+        
         res = sign * res
         if res < INT_MIN:
             return INT_MIN
