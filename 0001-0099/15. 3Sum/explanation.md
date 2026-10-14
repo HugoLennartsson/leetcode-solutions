@@ -81,4 +81,4 @@ For each index, we check all indexes to the right of it. This means that our sol
 
 **Space Complexity**
 
-In the worst case scenario, an array can have a quadratic number of unique triplets that sum up to zero. This would give us a total space complexity of <code><i>O(n&sup2;)</i></code>. However, looking at the auxiliary space, meaning we exclude the output, the space complexity is going to be dictated by our sorting algorithm. Pythons built in sorting uses timsort, which has a wost case sapce complexity of <code><i>O(n)</i></code>.
+In the worst case scenario, an array can have a quadratic number of unique triplets that sum up to zero. This would give us a total space complexity of <code><i>O(n&sup2;)</i></code>. However, looking at the auxiliary space, meaning we exclude the output, the space complexity is going to be dictated by our sorting algorithm. Pythons built in sorting uses timsort, which has a worst case space complexity of <code><i>O(n)</i></code>.
